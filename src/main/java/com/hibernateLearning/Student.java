@@ -5,7 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-//        (name="Student") // we can change the table name ,it'll create another table with new name and old column names
 public class Student {
 
     @Id
