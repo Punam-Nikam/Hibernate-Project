@@ -13,15 +13,6 @@ public class Main {
         a1.setAname("Bhuvneshwar kumar");
         a1.setTech("Flutter");
 
-        // hey hibernate save data with a1 object
-
-      /*  Configuration config = new Configuration();
-        config.configure();
-        config.addAnnotatedClass(com.hibernateLearning.Alien.class);
-       */   //instead of these 3 line we can write one line as ;-
-
-//Here -- >
-        //SessionFactory factory = config.buildSessionFactory();
         SessionFactory factory = new Configuration()
                 .addAnnotatedClass(Student.class)
                 .configure()
