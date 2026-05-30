@@ -8,11 +8,6 @@ import org.hibernate.cfg.Configuration;
 public class DeleteData {
     public static void main(String[] args) {
 
-//        Alien a1= new Alien();
-//        a1.setAid(102);
-//        a1.setAname("Dev");
-//        a1.setTech("Python");
-
         SessionFactory fact = new Configuration()
                 .addAnnotatedClass(Student.class)
                 .configure()
